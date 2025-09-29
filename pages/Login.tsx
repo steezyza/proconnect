@@ -26,7 +26,7 @@ const Login: React.FC = () => {
     <div className="min-h-screen bg-navy flex items-center justify-center p-4">
       <div className="max-w-md w-full bg-white rounded-2xl shadow-2xl p-8 space-y-8">
         <div className="text-center">
-            <img src="/src/assets/logo.svg" alt="ProConnect Logo" className="h-12 w-auto mx-auto" />
+            <img src="/src/assets/icon.svg" alt="ProConnect Logo" className="h-12 w-auto mx-auto" />
             <h1 className="mt-4 text-3xl font-poppins font-extrabold text-navy">
                 Welcome to ProConnect
             </h1>
