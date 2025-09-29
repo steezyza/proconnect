@@ -1,6 +1,6 @@
 import jwt from 'jsonwebtoken';
 import httpStatus from 'http-status';
-import User, { IUser } from '../../models/user.model';
+import User, { IUser } from '../../assets/models/user.model';
 import ApiError from '../../utils/ApiError';
 import config from '../../config';
 

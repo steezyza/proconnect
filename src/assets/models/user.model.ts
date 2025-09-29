@@ -42,6 +42,17 @@ const userSchema: Schema<IUser> = new Schema(
   { timestamps: true }
 );
 
+// Add a toJSON transform to remove private fields
+userSchema.set("toJSON", {
+  virtuals: true, // Ensure virtuals like 'id' are included
+  transform: (doc, ret, options) => {
+    delete ret._id;
+    delete ret.__v;
+    delete ret.password;
+    return ret;
+  },
+});
+
 userSchema.pre<IUser>('save', async function (next) {
   if (this.isModified('password') && this.password) {
     this.password = await bcrypt.hash(this.password, 8);
