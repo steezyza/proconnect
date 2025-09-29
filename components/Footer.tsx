@@ -21,8 +21,7 @@ const Footer: React.FC = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div className="flex flex-col items-start">
                         <div className="flex items-center gap-2 mb-2">
-                             <img src="/src/assets/logo.svg" alt="ProConnect Logo" className="h-8 w-auto" />
-                             <span className="font-poppins text-xl font-bold">ProConnect</span>
+                             <img src="/src/assets/full-logo.svg" alt="ProConnect Logo" className="h-8 w-auto" />
                         </div>
                         <p className="text-sm text-light-blue">&copy; {new Date().getFullYear()} ProConnect. All rights reserved.</p>
                     </div>
