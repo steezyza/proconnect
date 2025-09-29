@@ -22,8 +22,7 @@ const Header: React.FC = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <Link to="/dashboard" className="flex-shrink-0 flex items-center gap-2">
-              <img src="/src/assets/logo.svg" alt="ProConnect Logo" className="h-8 w-auto" />
-              <span className="font-poppins text-xl font-bold text-navy">ProConnect</span>
+              <img src="/src/assets/full-logo.svg" alt="ProConnect Logo" className="h-8 w-auto" />
             </Link>
             <nav className="hidden md:block ml-10">
               <div className="flex items-baseline space-x-4">
