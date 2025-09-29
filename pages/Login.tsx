@@ -99,11 +99,11 @@ const Login: React.FC = () => {
         </div>
         
         <div className="grid grid-cols-2 gap-4">
-            <button className="flex items-center justify-center gap-2 w-full bg-white border border-gray-300 text-gray-700 font-medium py-2 rounded-md hover:bg-gray-50">
+            <button className="flex items-center justify-center gap-2 w-full bg-white shadow text-gray-700 font-medium py-2 rounded-md hover:bg-gray-50">
                 <GoogleIcon className="h-5 w-5" />
                 Google
             </button>
-            <button className="flex items-center justify-center gap-2 w-full bg-white border border-gray-300 text-gray-700 font-medium py-2 rounded-md hover:bg-gray-50">
+            <button className="flex items-center justify-center gap-2 w-full bg-white shadow text-gray-700 font-medium py-2 rounded-md hover:bg-gray-50">
                 <LinkedInIcon className="h-5 w-5" />
                 LinkedIn
             </button>
