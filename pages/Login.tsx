@@ -27,10 +27,10 @@ const Login: React.FC = () => {
       <div className="max-w-md w-full bg-white rounded-2xl shadow-2xl p-8 space-y-8">
         <div className="text-center">
             <img src="/src/assets/icon.svg" alt="ProConnect Logo" className="h-12 w-auto mx-auto" />
-            <h1 className="mt-4 text-3xl font-poppins font-extrabold text-navy">
+            <h1 className="mt-8 text-2xl font-poppins font-extrabold text-navy">
                 Welcome to ProConnect
             </h1>
-            <p className="mt-2 text-gray-600">
+            <p className="mt-2 text-sm text-gray-600">
                 {isLogin ? 'Sign in to continue your journey' : 'Create an account to get started'}
             </p>
         </div>
