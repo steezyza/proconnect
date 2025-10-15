@@ -20,12 +20,21 @@ const Header: React.FC = () => {
     <header className="bg-white/80 backdrop-blur-md shadow-md sticky top-0 z-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
+<<<<<<< HEAD
           {/* Logo */}
           <Link to="/dashboard" className="flex-shrink-0 flex items-center gap-2">
             <img src="/src/assets/full-logo.svg" alt="ProConnect Logo" className="h-8 w-auto" />
           </Link>
           {/* Centered Navigation */}
           <nav className="hidden md:flex flex-1 justify-center">
+=======
+          <div className="flex-1 flex items-center">
+            <Link to="/dashboard" className="flex-shrink-0 flex items-center gap-2">
+              <img src="/src/assets/full-logo.svg" alt="ProConnect Logo" className="h-8 w-auto" />
+            </Link>
+          </div>
+          <nav className="hidden md:flex justify-center">
+>>>>>>> 24bf61a (Add initial files)
             <div className="flex items-baseline space-x-4">
               <NavLink to="/dashboard" className={navLinkClass}>Dashboard</NavLink>
               <NavLink to="/courses" className={navLinkClass}>Courses</NavLink>
@@ -34,18 +43,30 @@ const Header: React.FC = () => {
               <NavLink to="/forum" className={navLinkClass}>Forum</NavLink>
             </div>
           </nav>
+<<<<<<< HEAD
           {/* User Profile Dropdown */}
           <div className="relative">
             <button
+=======
+          <div className="relative flex-1 flex items-center justify-end">
+            <button 
+>>>>>>> 24bf61a (Add initial files)
               onClick={() => setDropdownOpen(!isDropdownOpen)}
               className="flex items-center space-x-2 p-2 rounded-full hover:bg-light-blue transition-colors"
             >
               <img className="h-9 w-9 rounded-full object-cover" src={user.avatar} alt={user.name} />
               <span className="hidden sm:inline text-sm font-medium text-navy">{user.name}</span>
+<<<<<<< HEAD
               <ChevronDownIcon className="h-5 w-5 text-gray-500" />
             </button>
             {isDropdownOpen && (
               <div
+=======
+              <ChevronDownIcon className="h-5 w-5 text-gray-500"/>
+            </button>
+            {isDropdownOpen && (
+              <div 
+>>>>>>> 24bf61a (Add initial files)
                 className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
                 onMouseLeave={() => setDropdownOpen(false)}
               >
